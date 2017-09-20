@@ -6,9 +6,14 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 SECRET_KEY = '\2\1thisismyscretkey\1\2\e\y\y\h'
 
 # The SQLAlchemy connection string.
-SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
-#SQLALCHEMY_DATABASE_URI = 'mysql://myapp@localhost/myapp'
+#SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
+SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:admin@localhost/intuitionmachine'
 #SQLALCHEMY_DATABASE_URI = 'postgresql://root:password@localhost/myapp'
+
+#Recaptcha Settings
+RECAPTCHA_USE_SSL = False
+RECAPTCHA_PUBLIC_KEY = '6Lf3ti8UAAAAAHSO98fqkGKvDfP99T2VE_jfpwi7'
+#RECAPTCHA_PRIVATE_KEY = ''
 
 # Flask-WTF flag for CSRF
 CSRF_ENABLED = True
@@ -31,6 +36,18 @@ CSRF_ENABLED = True
 # AUTH_LDAP : Is for LDAP
 # AUTH_REMOTE_USER : Is for using REMOTE_USER from web server
 AUTH_TYPE = AUTH_DB
+#AUTH_TYPE = AUTH_OAUTH
+#OAUTH_PROVIDERS = [
+    # {'name':'twitter', 'icon':'fa-twitter',
+    #     'remote_app': {
+    #         'consumer_key':'LjVUdL1HWQ8VFJr9xTjzycDtm',
+    #         'consumer_secret':'',
+    #         'base_url': 'https://api.twitter.com/1.1/',
+    #         'request_token_url': 'https://api.twitter.com/oauth/request_token',
+    #         'access_token_url': 'https://api.twitter.com/oauth/access_token',
+    #         'authorize_url': 'https://api.twitter.com/oauth/authenticate'}
+    # }
+# ]
 
 # Uncomment to setup Full admin role name
 #AUTH_ROLE_ADMIN = 'Admin'
@@ -39,10 +56,10 @@ AUTH_TYPE = AUTH_DB
 #AUTH_ROLE_PUBLIC = 'Public'
 
 # Will allow user self registration
-#AUTH_USER_REGISTRATION = True
+AUTH_USER_REGISTRATION = True
 
 # The default user self registration role
-#AUTH_USER_REGISTRATION_ROLE = "Public"
+AUTH_USER_REGISTRATION_ROLE = "Admin"
 
 # When using LDAP Auth, setup the ldap server
 #AUTH_LDAP_SERVER = "ldap://ldapserver.new"

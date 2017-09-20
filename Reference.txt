@@ -1,0 +1,3 @@
+"Always easier to add than to modify" - Sir Carlos
+1 Default Fab User : 1 Profile (with)
+1)http://flask-appbuilder.readthedocs.io/en/latest/relations.html

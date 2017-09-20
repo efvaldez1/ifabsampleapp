@@ -1,7 +1,13 @@
 import logging
-from flask import Flask
+from flask import Flask,render_template
 from flask.ext.appbuilder import SQLA, AppBuilder
+#
+#from .forms import UserForm
+#from .views import MyIndexView
 
+#Override IndexView and User Registration
+from app.index import MyIndexView
+from app.registration import MySecurityManager
 """
  Logging configuration
 """
@@ -12,8 +18,8 @@ logging.getLogger().setLevel(logging.DEBUG)
 app = Flask(__name__)
 app.config.from_object('config')
 db = SQLA(app)
-appbuilder = AppBuilder(app, db.session)
-
+appbuilder = AppBuilder(app, db.session,indexview=MyIndexView)
+#appbuilder = AppBuilder(app, db.session,indexview=MyIndexView,security_manager_class=MySecurityManager)
 
 """
 from sqlalchemy.engine import Engine
@@ -27,6 +33,7 @@ def set_sqlite_pragma(dbapi_connection, connection_record):
     cursor.execute("PRAGMA foreign_keys=ON")
     cursor.close()
 """    
+
 
 from app import views
 
