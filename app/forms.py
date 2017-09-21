@@ -1,6 +1,6 @@
 from wtforms import Form, StringField,IntegerField,DateField,validators,PasswordField
 from wtforms.validators import DataRequired,EqualTo,Email
-from flask_appbuilder.fieldwidgets import BS3TextFieldWidget,BS3PasswordFieldWidget
+from flask_appbuilder.fieldwidgets import BS3TextFieldWidget,BS3PasswordFieldWidget,DatePickerWidget
 from flask_appbuilder.forms import DynamicForm
 from flask_babel import lazy_gettext
 from flask_wtf.recaptcha import RecaptchaField
@@ -10,7 +10,7 @@ class ProfileForm(DynamicForm):
 	fname = StringField(('fname'),description=('First Name'),validators = [DataRequired()], widget=BS3TextFieldWidget())
 	lname = StringField(('lname'),description=('Last Name'), widget=BS3TextFieldWidget())
 	email = StringField(('email'),description=('Last Name'), widget=BS3TextFieldWidget())
-	birthday=DateField("birthday")
+	birthday=DateField("birthday", format='%Y/%m/%d', widget=DatePickerWidget())
 	streetAddress=StringField("streetAddress", [validators.DataRequired()])
 	country=StringField("country", [validators.DataRequired()])
 	city=StringField("city", [validators.Length(min=4, max=25)])
@@ -23,7 +23,8 @@ class MyUserInfoEdit(DynamicForm):
 	last_name = StringField("Last Name", widget=BS3TextFieldWidget())
 	email = StringField("Email", widget=BS3TextFieldWidget())
 	#birthday=DateField("Birthday", widget=BS3TextFieldWidget())
-	birthday=StringField("Birthday", widget=BS3TextFieldWidget())
+	#birthday=StringField("Birthday", widget=BS3TextFieldWidget())
+	birthday=DateField("Birthday", format='%Y/%m/%d', widget=DatePickerWidget())
 	streetAddress=StringField("Address", [validators.DataRequired()], widget=BS3TextFieldWidget())
 	country=StringField("Country", [validators.DataRequired()], widget=BS3TextFieldWidget())
 	city=StringField("City", [validators.Length(min=4, max=25)], widget=BS3TextFieldWidget())
@@ -48,7 +49,8 @@ class MyRegisterUserDBForm(DynamicForm):
 								  description=lazy_gettext('Please rewrite the password to confirm'),
 								  validators=[EqualTo('password', message=lazy_gettext('Passwords must match'))],
 								  widget=BS3PasswordFieldWidget())
-	birthday=StringField("Birthday", widget=BS3TextFieldWidget())
+	#birthday=StringField("Birthday", widget=BS3TextFieldWidget())
+	birthday=DateField("Birthday", format='%Y/%m/%d', widget=DatePickerWidget())
 	streetAddress=StringField("Address", [validators.DataRequired()], widget=BS3TextFieldWidget())
 	country=StringField("Country", [validators.DataRequired()], widget=BS3TextFieldWidget())
 	city=StringField("City", [validators.Length(min=4, max=25)], widget=BS3TextFieldWidget())
