@@ -12,3 +12,5 @@ class BasicTests(unittest.TestCase):
 	def setUp(self):
 		app.config['TESTING']=True
 		app.config['WTF_CRSF_ENABLED']=False
+if __name__ == "__main__":
+    unittest.main()
