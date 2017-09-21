@@ -1,3 +1,11 @@
 "Always easier to add than to modify" - Sir Carlos
 1 Default Fab User : 1 Profile (with)
 1)http://flask-appbuilder.readthedocs.io/en/latest/relations.html
+
+
+Testing
+1) https://semaphoreci.com/community/tutorials/continuous-deployment-of-a-python-flask-application-with-docker-and-semaphore
+2) https://github.com/pytest-dev/pytest-flask
+3) https://pytest-flask.readthedocs.io/en/latest/tutorial.html#step-1-install
+4) http://alexmic.net/flask-sqlalchemy-pytest/
+http://www.patricksoftwareblog.com/unit-testing-a-flask-application/
