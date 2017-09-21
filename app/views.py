@@ -5,7 +5,7 @@ from app import appbuilder, db
 #from app import db
 from .forms import ProfileForm
 from .models import Profile
-
+from .sec_views import UserDBModelView
 class ProfileModelView(ModelView):
 	datamodel=SQLAInterface(Profile)
 	
@@ -20,10 +20,8 @@ class ProfileFormView(SimpleFormView):
 
 	def form_get(self,form):
 		pass
-		#placeholders
 	def form_post(self,form):
-		#process form
-		flash(self.message,'Info')
+		pass
 @appbuilder.app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html', base_template=appbuilder.base_template, appbuilder=appbuilder), 404
@@ -31,5 +29,5 @@ def page_not_found(e):
 
 
 db.create_all()
-appbuilder.add_view(ProfileModelView,"See Profiles", icon="fa-folder-open-o", category="Profiles", category_icon='fa-envelope')
-appbuilder.add_view(ProfileModelView,"Create Profile", icon="fa-folder-open-o",label='My Form View',category="SignUp", category_icon='fa-address-card')
+#appbuilder.add_view(ProfileModelView,"See Profiles", icon="fa-folder-open-o", category="Profiles", category_icon='fa-envelope')
+#appbuilder.add_view(ProfileModelView,"Create Profile", icon="fa-folder-open-o",label='My Form View',category="SignUp", category_icon='fa-address-card')

@@ -1,12 +1,10 @@
 import logging
 from flask import Flask,render_template
 from flask_appbuilder import SQLA, AppBuilder
-#
-#from .forms import UserForm
-#from .views import MyIndexView
 
-#Override IndexView and User Registration
+#Override IndexView
 from app.index import MyIndexView
+#Override Security Manager
 from .sec import MySecurityManager
 """
  Logging configuration
@@ -35,5 +33,5 @@ def set_sqlite_pragma(dbapi_connection, connection_record):
 """    
 
 
-from app import views
+from app import models,views
 
