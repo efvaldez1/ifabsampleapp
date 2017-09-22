@@ -1,4 +1,4 @@
-from flask_appbuilder.security.views import UserDBModelView,UserInfoEditView # If AUTH_DB
+from flask_appbuilder.security.views import UserDBModelView,UserInfoEditView ,AuthDBView # If AUTH_DB
 #from flask_appbuilder.security.views import UserOAuthModelView #IF AUTH_OAUTH
 from flask_babel import lazy_gettext
 from .forms import MyUserInfoEdit,MyRegisterUserDBForm
@@ -20,6 +20,8 @@ class MyUserInfoEditView(UserInfoEditView):
 	message='Your Profile Has Been Updated.'
 	#user info page
 	#user_info_title = lazy_gettext("Your user information")
+class MyAuthDBView(AuthDBView):
+	login_template='appbuilder/login.html'
 class MyRegisterUserDBView(BaseRegisterUser):
 	form = MyRegisterUserDBForm
 	redirect_url= '/'

@@ -11,3 +11,9 @@ Testing
 http://www.patricksoftwareblog.com/unit-testing-a-flask-application/
 
 https://github.com/chamkank/flask-chatterbot
+
+
+Fix OAuth
+Add Tests
+Use chatter Bot
+Deploy to Heroku
