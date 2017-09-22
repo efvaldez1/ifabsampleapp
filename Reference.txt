@@ -9,3 +9,5 @@ Testing
 3) https://pytest-flask.readthedocs.io/en/latest/tutorial.html#step-1-install
 4) http://alexmic.net/flask-sqlalchemy-pytest/
 http://www.patricksoftwareblog.com/unit-testing-a-flask-application/
+
+https://github.com/chamkank/flask-chatterbot

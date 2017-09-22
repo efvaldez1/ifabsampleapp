@@ -36,17 +36,20 @@ CSRF_ENABLED = True
 # AUTH_DB : Is for database (username/password()
 # AUTH_LDAP : Is for LDAP
 # AUTH_REMOTE_USER : Is for using REMOTE_USER from web server
-AUTH_TYPE = AUTH_DB
+#AUTH_TYPE = AUTH_DB
 #AUTH_TYPE = AUTH_OAUTH
-#OAUTH_PROVIDERS = [
-    # {'name':'twitter', 'icon':'fa-twitter',
-    #     'remote_app': {
-    #         'consumer_key':'LjVUdL1HWQ8VFJr9xTjzycDtm',
-    #         'consumer_secret':'',
-    #         'base_url': 'https://api.twitter.com/1.1/',
-    #         'request_token_url': 'https://api.twitter.com/oauth/request_token',
-    #         'access_token_url': 'https://api.twitter.com/oauth/access_token',
-    #         'authorize_url': 'https://api.twitter.com/oauth/authenticate'}
+AUTH_TYPE=AUTH_DB
+OAUTH_PROVIDERS = [
+     {'name':'twitter', 'icon':'fa-twitter',
+         'remote_app': {
+             'consumer_key':'R1nyAAxmnUBItrU9Drq3Th9Bs',
+             'consumer_secret':'kGXsr093l9vgVYQlRVI4syYsekK5gINumJxIWyUYM04kd13Yw9',
+             'base_url': 'https://api.twitter.com/1.1/',
+             'request_token_url': 'https://api.twitter.com/oauth/request_token',
+             'access_token_url': 'https://api.twitter.com/oauth/access_token',
+             'authorize_url': 'https://api.twitter.com/oauth/authenticate'}
+    }
+    ]
     # }
 # ]
 
