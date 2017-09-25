@@ -3,6 +3,11 @@
 {% extends "appbuilder/base.html" %}
 
 
+{% block head_css %}
+    {{ super() }}
+    <link href="{{url_for('static',filename='css/chat.css')}}" rel="stylesheet">
+{% endblock %}
+
 {% block content %}
 
 <div class="container">
@@ -59,27 +64,18 @@
 		</div>
 	</div>
 
-	<div class = "chatbox" width='300px' height='300px'>
+	
+</div>
+<div class = "chatbox"  id='chat'>
+		<div class="chatheader" id='chatheader'>Chat Assistant</div>
 		<div class="chatlogs" id='chatlogs'>
-		<!--<div class="chat self">
-			 <div class="user-photo">
-				<p class='chat-message'>Sup Broski</p>
-			</div>
-		</div>    
-		<div class="chat bot">
-			 <div class="user-photo">
-				<p class='chat-message'>Sup !</p>
-			</div>
-		</div>        
-		-->
 		</div>
 		<div class="chat-form">
 			<textarea id='message'></textarea>
 			<button id='send'>Send</button>
-		</div>
+		</div>		
 		  
 	</div>
-</div>
 {% endblock %}
 {% block head_js%}
 	{{super()}}

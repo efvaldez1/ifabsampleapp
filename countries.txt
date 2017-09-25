@@ -1,6 +1,4 @@
-choices=[('AF','Afghanistan'),]
-('AF','Afghanistan'
-
+choices=[('AF','Afghanistan'),
 ,('AL','Albania')
 
 ,('DZ','Algeria')
@@ -81,448 +79,445 @@ choices=[('AF','Afghanistan'),]
 
 ,('CT','Canton and Enderbury Islands')
 
-CV,Cape Verde
+,('CV','Cape Verde')
 
-KY,Cayman Islands
+,('KY','Cayman Islands')
 
-CF,Central African Republic
+,('CF','Central African Republic')
 
-TD,Chad
+,('TD','Chad')
 
-CL,Chile
+,('CL','Chile')
 
-CN,China
+,('CN','China')
 
-CX,Christmas Island
+,('CX','Christmas Island')
 
-CC,Cocos [Keeling] Islands
+,('CC','Cocos [Keeling] Islands')
 
-CO,Colombia
+,('CO','Colombia')
 
-KM,Comoros
+,('KM','Comoros')
 
-CG,Congo - Brazzaville
+,('CG','Congo ',' Brazzaville')
 
-CD,Congo - Kinshasa
+,('CD','Congo ',' Kinshasa')
 
-CK,Cook Islands
+,('CK','Cook Islands')
 
-CR,Costa Rica
+,('CR','Costa Rica')
 
-HR,Croatia
+,('HR','Croatia')
 
-CU,Cuba
+,('CU','Cuba')
 
-CY,Cyprus
+,('CY','Cyprus')
 
-CZ,Czech Republic
+,('CZ','Czech Republic')
 
-CI,Côte d’Ivoire
+,('CI','Côte d’Ivoire')
 
-DK,Denmark
+,('DK','Denmark')
+')
+,('DJ','Djibouti')
 
-DJ,Djibouti
+,('DM','Dominica')
 
-DM,Dominica
+,('DO','Dominican Republic')
 
-DO,Dominican Republic
+,('NQ','Dronning Maud Land')
 
-NQ,Dronning Maud Land
+,('DD','East Germany')
 
-DD,East Germany
+,('EC','Ecuador')
 
-EC,Ecuador
+,('EG','Egypt')
 
-EG,Egypt
+,('SV','El Salvador')
 
-SV,El Salvador
+,('GQ','Equatorial Guinea')
 
-GQ,Equatorial Guinea
+,('ER','Eritrea')
 
-ER,Eritrea
+,('EE','Estonia')
 
-EE,Estonia
+,('ET','Ethiopia')
 
-ET,Ethiopia
+,('FK','Falkland Islands')
 
-FK,Falkland Islands
+,('FO','Faroe Islands')
 
-FO,Faroe Islands
+,('FJ','Fiji')
 
-FJ,Fiji
+,('FI','Finland')
 
-FI,Finland
+,('FR','France')
 
-FR,France
+,('GF','French Guiana')
 
-GF,French Guiana
+,('PF','French Polynesia')
 
-PF,French Polynesia
+,('TF','French Southern Territories')
 
-TF,French Southern Territories
+,('FQ','French Southern and Antarctic Territories')
 
-FQ,French Southern and Antarctic Territories
+,('GA','Gabon')
 
-GA,Gabon
+,('GM','Gambia')
 
-GM,Gambia
+,('GE','Georgia')
 
-GE,Georgia
+,('DE','Germany')
 
-DE,Germany
+,('GH','Ghana')
 
-GH,Ghana
+,('GI','Gibraltar')
 
-GI,Gibraltar
+,('GR','Greece')
+')
+,('GL','Greenland')
 
-GR,Greece
+,('GD','Grenada')
 
-GL,Greenland
+,('GP','Guadeloupe')
 
-GD,Grenada
+,('GU','Guam')
 
-GP,Guadeloupe
+,('GT','Guatemala')
 
-GU,Guam
+,('GG','Guernsey')
 
-GT,Guatemala
+,('GN','Guinea')
 
-GG,Guernsey
+,('GW','Guinea-Bissau')
 
-GN,Guinea
+,('GY','Guyana')
 
-GW,Guinea-Bissau
+,('HT','Haiti')
 
-GY,Guyana
+,('HM','Heard Island and McDonald Islands')
 
-HT,Haiti
+,('HN','Honduras')
 
-HM,Heard Island and McDonald Islands
+,('HK','Hong Kong SAR China')
 
-HN,Honduras
+,('HU','Hungary')
 
-HK,Hong Kong SAR China
+,('IS','Iceland')
 
-HU,Hungary
+,('IN','India')
 
-IS,Iceland
+,('ID','Indonesia')
 
-IN,India
+,('IR','Iran')
 
-ID,Indonesia
+,('IQ','Iraq')
 
-IR,Iran
+,('IE','Ireland')
 
-IQ,Iraq
+,('IM','Isle of Man')
 
-IE,Ireland
+,('IL','Israel')
 
-IM,Isle of Man
+,('IT','Italy')
 
-IL,Israel
+,('JM','Jamaica')
 
-IT,Italy
+,('JP','Japan')
 
-JM,Jamaica
+,('JE','Jersey')
 
-JP,Japan
+,('JT','Johnston Island')
 
-JE,Jersey
+,('JO','Jordan')
 
-JT,Johnston Island
+,('KZ','Kazakhstan')
 
-JO,Jordan
+,('KE','Kenya')
 
-KZ,Kazakhstan
+,('KI','Kiribati')
 
-KE,Kenya
+,('KW','Kuwait')
 
-KI,Kiribati
+,('KG','Kyrgyzstan')
 
-KW,Kuwait
+,('LA','Laos')
 
-KG,Kyrgyzstan
+,('LV','Latvia')
 
-LA,Laos
+,('LB','Lebanon')
 
-LV,Latvia
+,('LS','Lesotho')
 
-LB,Lebanon
+,('LR','Liberia')
 
-LS,Lesotho
+,('LY','Libya')
 
-LR,Liberia
+,('LI','Liechtenstein')
 
-LY,Libya
+,('LT','Lithuania')
 
-LI,Liechtenstein
+,('LU','Luxembourg')
 
-LT,Lithuania
+,('MO','Macau SAR China')
 
-LU,Luxembourg
+,('MK','Macedonia')
 
-MO,Macau SAR China
+,('MG','Madagascar')
 
-MK,Macedonia
+,('MW','Malawi')
 
-MG,Madagascar
+,('MY','Malaysia')
 
-MW,Malawi
+,('MV','Maldives')
 
-MY,Malaysia
+,('ML','Mali')
 
-MV,Maldives
+,('MT','Malta')
 
-ML,Mali
+,('MH','Marshall Islands')
 
-MT,Malta
+,('MQ','Martinique')
 
-MH,Marshall Islands
+,('MR','Mauritania')
 
-MQ,Martinique
+,('MU','Mauritius')
 
-MR,Mauritania
+,('YT','Mayotte')
 
-MU,Mauritius
+,('FX','Metropolitan France')
 
-YT,Mayotte
+,('MX','Mexico')
 
-FX,Metropolitan France
+,('FM','Micronesia')')
+,('MI','Midway Islands')
 
-MX,Mexico
+,('MD','Moldova')
 
-FM,Micronesia
+,('MC','Monaco')
 
-MI,Midway Islands
+,('MN','Mongolia')
 
-MD,Moldova
+,('ME','Montenegro')
 
-MC,Monaco
+,('MS','Montserrat')
 
-MN,Mongolia
+,('MA','Morocco')
 
-ME,Montenegro
+,('MZ','Mozambique')
 
-MS,Montserrat
+,('MM','Myanmar [Burma]')
 
-MA,Morocco
+,('NA','Namibia')
 
-MZ,Mozambique
+,('NR','Nauru')
 
-MM,Myanmar [Burma]
+,('NP','Nepal')
 
-NA,Namibia
+,('NL','Netherlands')
 
-NR,Nauru
+,('AN','Netherlands Antilles')
 
-NP,Nepal
+,('NT','Neutral Zone')
 
-NL,Netherlands
+,('NC','New Caledonia')
 
-AN,Netherlands Antilles
+,('NZ','New Zealand')
 
-NT,Neutral Zone
+,('NI','Nicaragua')
 
-NC,New Caledonia
+,('NE','Niger')
 
-NZ,New Zealand
+,('NG','Nigeria')
 
-NI,Nicaragua
+,('NU','Niue')
 
-NE,Niger
+,('NF','Norfolk Island')
 
-NG,Nigeria
+,('KP','North Korea')
 
-NU,Niue
+,('VD','North Vietnam')
 
-NF,Norfolk Island
+,('MP','Northern Mariana Islands')
 
-KP,North Korea
+,('NO','Norway')
 
-VD,North Vietnam
+,('OM','Oman')
 
-MP,Northern Mariana Islands
+,('PC','Pacific Islands Trust Territory')
 
-NO,Norway
+,('PK','Pakistan')
 
-OM,Oman
+,('PW','Palau')
 
-PC,Pacific Islands Trust Territory
+,('PS','Palestinian Territories')
 
-PK,Pakistan
+,('PA','Panama')
 
-PW,Palau
+,('PZ','Panama Canal Zone')
 
-PS,Palestinian Territories
+,('PG','Papua New Guinea')
 
-PA,Panama
+,('PY','Paraguay')
 
-PZ,Panama Canal Zone
+,('YD','People's Democratic Republic of Yemen')
 
-PG,Papua New Guinea
+,('PE','Peru')
 
-PY,Paraguay
+,('PH','Philippines')
 
-YD,People's Democratic Republic of Yemen
+,('PN','Pitcairn Islands')
 
-PE,Peru
+,('PL','Poland')
 
-PH,Philippines
+,('PT','Portugal')
 
-PN,Pitcairn Islands
+,('PR','Puerto Rico')
 
-PL,Poland
+,('QA','Qatar')
 
-PT,Portugal
+,('RO','Romania')
 
-PR,Puerto Rico
+,('RU','Russia')
 
-QA,Qatar
+,('RW','Rwanda')
 
-RO,Romania
+,('RE','Réunion')
 
-RU,Russia
+,('BL','Saint Barthélemy')
 
-RW,Rwanda
+,('SH','Saint Helena')
 
-RE,Réunion
+,('KN','Saint Kitts and Nevis')
 
-BL,Saint Barthélemy
+,('LC','Saint Lucia')
 
-SH,Saint Helena
+,('MF','Saint Martin')
 
-KN,Saint Kitts and Nevis
+,('PM','Saint Pierre and Miquelon')
 
-LC,Saint Lucia
+,('VC','Saint Vincent and the Grenadines')
 
-MF,Saint Martin
+,('WS','Samoa')
 
-PM,Saint Pierre and Miquelon
+,('SM','San Marino')
 
-VC,Saint Vincent and the Grenadines
+,('SA','Saudi Arabia')
 
-WS,Samoa
+,('SN','Senegal')
 
-SM,San Marino
+,('RS','Serbia')
 
-SA,Saudi Arabia
+,('CS','Serbia and Montenegro')
 
-SN,Senegal
+,('SC','Seychelles')
 
-RS,Serbia
+,('SL','Sierra Leone')
 
-CS,Serbia and Montenegro
+,('SG','Singapore')
 
-SC,Seychelles
+,('SK','Slovakia')
 
-SL,Sierra Leone
+,('SI','Slovenia')
 
-SG,Singapore
+,('SB','Solomon Islands')
 
-SK,Slovakia
+,('SO','Somalia')
 
-SI,Slovenia
+,('ZA','South Africa')
 
-SB,Solomon Islands
+,('GS','South Georgia and the South Sandwich Islands')
 
-SO,Somalia
+,('KR','South Korea')
 
-ZA,South Africa
+,('ES','Spain')
 
-GS,South Georgia and the South Sandwich Islands
+,('LK','Sri Lanka')
 
-KR,South Korea
+,('SD','Sudan')
 
-ES,Spain
+,('SR','Suriname')
 
-LK,Sri Lanka
+,('SJ','Svalbard and Jan Mayen')
 
-SD,Sudan
+,('SZ','Swaziland')
 
-SR,Suriname
+,('SE','Sweden')
 
-SJ,Svalbard and Jan Mayen
+,('CH','Switzerland')
 
-SZ,Swaziland
+,('SY','Syria')
 
-SE,Sweden
+,('ST','São Tomé and Príncipe')
 
-CH,Switzerland
+,('TW','Taiwan')
+,('TJ','Tajikistan')
 
-SY,Syria
+,('TZ','Tanzania')
 
-ST,São Tomé and Príncipe
+,('TH','Thailand')
 
-TW,Taiwan
+,('TL','Timor-Leste')
 
-TJ,Tajikistan
+,('TG','Togo')
 
-TZ,Tanzania
+,('TK','Tokelau')
 
-TH,Thailand
+,('TO','Tonga')
 
-TL,Timor-Leste
+,('TT','Trinidad and Tobago')
 
-TG,Togo
+,('TN','Tunisia')
 
-TK,Tokelau
+,('TR','Turkey')
 
-TO,Tonga
+,('TM','Turkmenistan')
 
-TT,Trinidad and Tobago
+,('TC','Turks and Caicos Islands')
 
-TN,Tunisia
+,('TV','Tuvalu')
 
-TR,Turkey
+,('UM','U.S. Minor Outlying Islands')
 
-TM,Turkmenistan
+,('PU','U.S. Miscellaneous Pacific Islands')
 
-TC,Turks and Caicos Islands
+,('VI','U.S. Virgin Islands')
 
-TV,Tuvalu
+,('UG','Uganda')
 
-UM,U.S. Minor Outlying Islands
+,('UA','Ukraine')
 
-PU,U.S. Miscellaneous Pacific Islands
+,('SU','Union of Soviet Socialist Republics')
 
-VI,U.S. Virgin Islands
+,('AE','United Arab Emirates')
 
-UG,Uganda
+,('GB','United Kingdom')
 
-UA,Ukraine
+,('US','United States')
 
-SU,Union of Soviet Socialist Republics
+,('ZZ','Unknown or Invalid Region')
 
-AE,United Arab Emirates
+,('UY','Uruguay')
 
-GB,United Kingdom
+,('UZ','Uzbekistan')
 
-US,United States
+,('VU','Vanuatu')
 
-ZZ,Unknown or Invalid Region
+,('VA','Vatican City')
 
-UY,Uruguay
+,('VE','Venezuela')
 
-UZ,Uzbekistan
+,('VN','Vietnam')
 
-VU,Vanuatu
+,('WK','Wake Island')
 
-VA,Vatican City
+,('WF','Wallis and Futuna')
+,('EH','Western Sahara')
 
-VE,Venezuela
+,('YE','Yemen')
 
-VN,Vietnam
+,('ZM','Zambia')
 
-WK,Wake Island
-
-WF,Wallis and Futuna
-
-EH,Western Sahara
-
-YE,Yemen
-
-ZM,Zambia
-
-ZW,Zimbabwe
+,('ZW','Zimbabwe')]
 
 

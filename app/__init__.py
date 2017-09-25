@@ -14,12 +14,9 @@ from .sec import MySecurityManager
 from chatterbot import ChatBot 
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
-
-
-
-english_bot=ChatBot("Gordon Ramsey",storage_adapter='chatterbot.storage.SQLStorageAdapter',database_uri='postgresql://postgres:admin@localhost/intuitionmachine')
-english_bot.set_trainer(ChatterBotCorpusTrainer)
-english_bot.train("chatterbot.corpus.english")
+#english_bot=ChatBot("Gordon Ramsey",storage_adapter='chatterbot.storage.SQLStorageAdapter',database_uri='postgresql://postgres:admin@localhost/intuitionmachine')
+#english_bot.set_trainer(ChatterBotCorpusTrainer)
+#english_bot.train("chatterbot.corpus.english")
 
 logging.basicConfig(format='%(asctime)s:%(levelname)s:%(name)s:%(message)s')
 logging.getLogger().setLevel(logging.DEBUG)
