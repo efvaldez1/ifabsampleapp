@@ -16,9 +16,9 @@ import requests
 """
  Logging configuration
 """
-#english_bot=ChatBot("Gordon Ramsey",storage_adapter='chatterbot.storage.SQLStorageAdapter',database_uri='postgresql://postgres:admin@localhost/intuitionmachine')
-#english_bot.set_trainer(ChatterBotCorpusTrainer)
-#english_bot.train("chatterbot.corpus.english")
+english_bot=ChatBot("Gordon Ramsey",storage_adapter='chatterbot.storage.SQLStorageAdapter',database_uri='postgresql://postgres:admin@localhost/intuitionmachine')
+english_bot.set_trainer(ChatterBotCorpusTrainer)
+english_bot.train("chatterbot.corpus.english")
 
 logging.basicConfig(format='%(asctime)s:%(levelname)s:%(name)s:%(message)s')
 logging.getLogger().setLevel(logging.DEBUG)
@@ -32,9 +32,9 @@ appbuilder = AppBuilder(app, db.session,indexview=MyIndexView,security_manager_c
 
 
 #Get Response From Chatterbot
-# @app.route("/get/<string:query>")
-# def get_raw_response(query):
-# 	return str(english_bot.get_response(query))
+@app.route("/get/<string:query>")
+def get_raw_response(query):
+	return str(english_bot.get_response(query))
 
 
 # @app.route("/addcountry/")

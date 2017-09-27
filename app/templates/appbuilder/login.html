@@ -64,18 +64,21 @@
 		</div>
 	</div>
 
-	
+
 </div>
-<div class = "chatbox"  id='chat'>
-		<div class="chatheader" id='chatheader'>Chat Assistant</div>
-		<div class="chatlogs" id='chatlogs'>
-		</div>
-		<div class="chat-form">
-			<textarea id='message'></textarea>
-			<button id='send'>Send</button>
-		</div>		
-		  
-	</div>
+<div class = "chatbox" >
+  <div class="expandableContent">
+    <div class="chatheader" id='chatheader'>Chat Assistant</div>
+    <div class="chatContainer" id="chatContainer">
+        <div class="chatlogs" id='chatlogs'>	
+        </div>
+        <div class="chat-form">
+          <textarea id='message'></textarea>
+          <button id='send'>Send</button>
+        </div>
+    </div>
+  </div>
+</div>		
 {% endblock %}
 {% block head_js%}
 	{{super()}}

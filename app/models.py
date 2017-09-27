@@ -47,7 +47,7 @@ class MyUser(User):
 		zipCode=Column(String(255))
 		ethAddress=Column(String(255))
 		govID=Column(String(255))
-		geoIP=Column(String(255))
+		geoIP=Column(String(255))				
 		geoLoc=Column(String(255))
 
 class MyRegisterUser(RegisterUser): 

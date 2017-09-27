@@ -8,7 +8,8 @@ SECRET_KEY = '\2\1thisismyscretkey\1\2\e\y\y\h'
 # The SQLAlchemy connection string.
 #SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
 #SQLALCHEMY_DATABASE_URI =  'postgresql://postgresql-infinite-43691' #Heroku PSQL
-SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:admin@localhost/intuitionmachine'
+SQLALCHEMY_DATABASE_URI="postgres://vjqbrvehpqylkr:8e819be238dc840c7b75c65046632a86885db0b75e6487e5e3033171b46494cf@ec2-54-225-88-191.compute-1.amazonaws.com:5432/d9m7r14vecvjps"
+#SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:admin@localhost/intuitionmachine'
 #SQLALCHEMY_DATABASE_URI = 'postgresql://root:password@localhost/myapp'
 
 #Recaptcha Settings
@@ -23,10 +24,10 @@ CSRF_ENABLED = True
 # GLOBALS FOR APP Builder 
 #------------------------------
 # Uncomment to setup Your App name
-#APP_NAME = "My App Name"
+APP_NAME = "Intuition Fabric"
 
 # Uncomment to setup Setup an App icon
-#APP_ICON = "static/img/logo.jpg"
+APP_ICON = "static/img/intuitionmachine.png"
 
 #----------------------------------------------------
 # AUTHENTICATION CONFIG
@@ -39,18 +40,35 @@ CSRF_ENABLED = True
 #AUTH_TYPE = AUTH_DB
 #AUTH_TYPE = AUTH_OAUTH
 AUTH_TYPE=AUTH_DB
+#GOOGLE_API_CLIENT_ID = '1073346562559-k45igodd0anqbnrbn40u1ie6q3oj4bmc.apps.googleusercontent.com'
+#GOOGLE_API_CLIENT_SECRET = 'Rmuem4qinPp60nrP55R2ZCFO'
 OAUTH_PROVIDERS = [
-     {'name':'twitter', 'icon':'fa-twitter',
-         'remote_app': {
-             'consumer_key':'R1nyAAxmnUBItrU9Drq3Th9Bs',
-             'consumer_secret':'kGXsr093l9vgVYQlRVI4syYsekK5gINumJxIWyUYM04kd13Yw9',
-             'base_url': 'https://api.twitter.com/1.1/',
-             'request_token_url': 'https://api.twitter.com/oauth/request_token',
-             'access_token_url': 'https://api.twitter.com/oauth/access_token',
-             'authorize_url': 'https://api.twitter.com/oauth/authenticate'}
-    }
-    ]
-    # }
+	 {'name':'twitter', 'icon':'fa-twitter',
+		 'remote_app': {
+			 'consumer_key':'QUZI8R1iYqFLCULZujIPYDfkb',
+			 'consumer_secret':'06tUbMnrYadmnDGNXVvGt6zR8WBmnhiARmFxUqhRpNZhGEJW9e',
+			 'base_url': 'https://api.twitter.com/1.1/',
+			 'request_token_url': 'https://api.twitter.com/oauth/request_token',
+			 'access_token_url': 'https://api.twitter.com/oauth/access_token',
+			 'authorize_url': 'https://api.twitter.com/oauth/authenticate'}
+	}
+	,
+	{'name': 'google', 'icon': 'fa-google', 'token_key': 'access_token',
+		'remote_app': {
+			'consumer_key': '1073346562559-k45igodd0anqbnrbn40u1ie6q3oj4bmc',
+			'consumer_secret': 'Rmuem4qinPp60nrP55R2ZCFO',
+			'base_url': 'https://www.googleapis.com/oauth2/v2/',
+			'request_token_params': {
+			  'scope': 'email profile'
+			},
+			'request_token_url': None,
+			'access_token_url': 'https://accounts.google.com/o/oauth2/token',
+			'authorize_url': 'https://accounts.google.com/o/oauth2/auth'}
+	}
+	]
+	
+	
+	# }
 # ]
 
 # Uncomment to setup Full admin role name
@@ -92,14 +110,14 @@ BABEL_DEFAULT_LOCALE = 'en'
 BABEL_DEFAULT_FOLDER = 'translations'
 # The allowed translation for you app
 LANGUAGES = {
-    'en': {'flag':'gb', 'name':'English'},
-    'pt': {'flag':'pt', 'name':'Portuguese'},
-    'pt_BR': {'flag':'br', 'name': 'Pt Brazil'},
-    'es': {'flag':'es', 'name':'Spanish'},
-    'de': {'flag':'de', 'name':'German'},
-    'zh': {'flag':'cn', 'name':'Chinese'},
-    'ru': {'flag':'ru', 'name':'Russian'},
-    'pl': {'flag':'pl', 'name':'Polish'}
+	'en': {'flag':'gb', 'name':'English'},
+	'pt': {'flag':'pt', 'name':'Portuguese'},
+	'pt_BR': {'flag':'br', 'name': 'Pt Brazil'},
+	'es': {'flag':'es', 'name':'Spanish'},
+	'de': {'flag':'de', 'name':'German'},
+	'zh': {'flag':'cn', 'name':'Chinese'},
+	'ru': {'flag':'ru', 'name':'Russian'},
+	'pl': {'flag':'pl', 'name':'Polish'}
 }
 #---------------------------------------------------
 # Image and file configuration
@@ -118,7 +136,7 @@ IMG_UPLOAD_URL = '/static/uploads/'
 # Theme configuration
 # these are located on static/appbuilder/css/themes
 # you can create your own and easily use them placing them on the same dir structure to override
-#APP_THEME = "bootstrap-theme.css"  # default bootstrap
+APP_THEME = "bootstrap-theme.css"  # default bootstrap
 #APP_THEME = "cerulean.css"
 #APP_THEME = "amelia.css"
 #APP_THEME = "cosmo.css"
